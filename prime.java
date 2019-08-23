@@ -1,4 +1,3 @@
-//question link  https://www.hackerrank.com/challenges/ctci-big-o/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=miscellaneous
 import java.io.*;
 import java.util.*;
 public class Main 
@@ -10,7 +9,7 @@ public class Main
             for(int j=0;j<len;j++)
             {  int cnt=0;
                 int a= sc.nextInt();
-                for(int i=1;i<=a;i++)
+                for(int i=2;i<=a/2;i++)
                 {
                     if(a%i==0)
                     {
@@ -18,7 +17,7 @@ public class Main
                     }
                     
                 }
-                    if(cnt==2)
+                    if(cnt==0)
                     {
                         System.out.println("Prime");
                     }
