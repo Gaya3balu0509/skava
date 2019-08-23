@@ -13,7 +13,7 @@ public class Main {
             {
                    st.push(str.charAt(i));
             } 
-else if ( !st.empty() && ((str.charAt(i) == ']' |(str.charAt(i) == '}')||(str.charAt(i) == ')'))))
+            else if ( !st.empty() && ((str.charAt(i) == ']' && st.peek() == '[') || (str.charAt(i) == '}' && st.peek() == '{') ||(str.charAt(i) == ')' && st.peek() == '(')))
        { st.pop();
  
              } else {
