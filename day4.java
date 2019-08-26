@@ -1,4 +1,4 @@
-//question link    https://www.hackerrank.com/challenges/30-review-loop/problem?h_r=next-challenge&h_v=zen
+//question link   https://www.hackerrank.com/challenges/30-class-vs-instance/problem
 import java.io.*;
 import java.util.*;
 public class Person {
