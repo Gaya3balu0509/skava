@@ -18,7 +18,7 @@ public class Main
             int cycle=0;
            while(!v[i]){
                 v[i]=true;
-                j=n[i]-1;
+                i=n[i]-1;
                 cycle++;
             }
              if(cycle!=0)
