@@ -15,10 +15,10 @@ public class Main
         boolean v[]=new boolean[len];
         for(int i=0;i<len;i++)
         {
-            int j=i,cycle=0;
-           while(!v[j]){
-                v[j]=true;
-                j=n[j]-1;
+            int cycle=0;
+           while(!v[i]){
+                v[i]=true;
+                j=n[i]-1;
                 cycle++;
             }
              if(cycle!=0)
