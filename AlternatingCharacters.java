@@ -7,7 +7,8 @@ public class Main {
              int total= sc.nextInt();
              int count=0;
              for(int i=0;i<total;i++)
-             {
+             { 
+		         //initialse count
                   count=0;
                  String s=sc.next();
                  char[] ch=s.toCharArray();
