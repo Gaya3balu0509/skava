@@ -7,19 +7,24 @@ public class Main
     {
         int cnt=0;
         Scanner sc = new Scanner(System.in);
-        String[] n= sc.nextLine().split(" ");
-        int noele = Integer.parseInt(n[0]);
-        int diff = Integer.parseInt(n[1]);
-        String[] newarr= sc.nextLine().split(" ");
+        Integer noele= sc.nextInt();
+        Integer target= sc.nextInt();
+        int[] newarr= new int[noele];
+        for(int i=0;i<noele;i++){
+            newarr[i]=sc.nextInt();
+        }
         Arrays.sort(newarr);
         for(int i=0;i<newarr.length;i++)
         {
-            for(int j=i;j<newarr.length;j++)
+            for(int j=i+1;j<newarr.length;j++)
             {
-                if(Integer.parseInt(newarr[j]) - Integer.parseInt(newarr[i])==diff)
+                if(newarr[j]-newarr[i]==target || newarr[i] -newarr[j]==target)
                 {
                     cnt=cnt+1;
                 }
-            }
+                if (newarr[j]-newarr[i]> target || newarr[i] -newarr[j]>target) 
+                {
+                    break;
+            }}
         }System.out.println(cnt);
-    }}
+}}
